@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大宝 × 丁禹兮全球品牌代言人官宣及系列主题店全案传播策划</title>
+    <style>
+        :root {
+            --dabao-red-dark: #7A0912;     /* 丝绒暗酒红 */
+            --dabao-red-main: #B3121E;     /* 大宝高奢正红 */
+            --dabao-red-bright: #D62839;   /* 能量亮红 */
+            --dabao-gold: #D4AF37;         /* 鎏金香槟 */
+            --dabao-gold-soft: #F3E5AB;    /* 柔光浅金 */
+            --bg-ivory: #FAF7F5;           /* 暖瓷米白 */
+            --card-white: #FFFFFF;         /* 纯白卡片 */
+            --text-dark: #1F1415;          /* 炭黑墨色 */
+            --text-muted: #6E5A5C;         /* 玫瑰灰棕 */
+            --border-rose: #EADCD9;        /* 浅绯边框 */
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(155deg, #FCF9F7 0%, #F7EFEA 55%, #F2E4DF 100%);
+            color: var(--text-dark);
+            min-height: 100vh;
+            padding: 30px 24px 64px 24px;
+        }
+
+        .container {
+            max-width: 1420px;
+            margin: 0 auto;
+        }
+
+        /* 顶部高定红金主视觉 Banner */
+        .hero-banner {
+            background: linear-gradient(128deg, #5E060D 0%, #9E0E1A 52%, #C81D2B 100%);
+            border-radius: 26px;
+            padding: 38px 46px;
+            color: #FFFDFB;
+            box-shadow: 0 20px 48px rgba(138, 12, 23, 0.24);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 26px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.38);
+        }
+
+        /* 装饰性鎏金光晕 */
+        .hero-banner::before {
+            content: "";
+            position: absolute;
+            right: -60px;
+            top: -80px;
+            width: 440px;
+            height: 440px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, rgba(212, 175, 55, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-left { flex: 1; z-index: 1; }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(212, 175, 55, 0.22);
+            border: 1px solid rgba(243, 229, 171, 0.55);
+            color: var(--dabao-gold-soft);
+            padding: 5px 16px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .hero-left h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            margin-bottom: 10px;
+            line-height: 1.3;
+            color: #FFFFFF;
+        }
+
+        .hero-left .sub-slogan {
+            font-size: 1.14rem;
+            color: var(--dabao-gold-soft);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .hero-left p {
+            color: #F5D6D8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            max-width: 880px;
+        }
+
+        .hero-endorser-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(255, 255, 255, 0.11);
+            backdrop-filter: blur(12px);
+            padding: 16px 22px;
+            border-radius: 20px;
+            border: 1px solid rgba(243, 229, 171, 0.4);
+            z-index: 1;
+            flex-shrink: 0;
+        }
+
+        .hero-endorser-card img {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            border: 3px solid var(--dabao-gold-soft);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        .hero-endorser-info {
+            font-size: 0.88rem;
+            line-height: 1.55;
+            color: #FFF5F5;
+        }
+
+        .hero-endorser-info b {
+            display: block;
+            font-size: 1.05rem;
+            color: var(--dabao-gold-soft);
+            margin-bottom: 3px;
+        }
+
+        /* 顶部核心指标卡片行 */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 26px;
+        }
+
+        .kpi-box {
+            background: var(--card-white);
+            border-radius: 18px;
+            padding: 20px 24px;
+            border: 1px solid var(--border-rose);
+            box-shadow: 0 8px 24px rgba(122, 9, 18, 0.05);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+        .kpi-box:hover { transform: translateY(-3px); }
+
+        .kpi-box::before {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; bottom: 0; width: 6px;
+            background: var(--dabao-red-main);
+        }
+        .kpi-box.gold::before { background: var(--dabao-gold); }
+        .kpi-box.dark::before { background: var(--dabao-red-dark); }
+        .kpi-box.bright::before { background: var(--dabao-red-bright); }
+
+        .kpi-title { font-size: 0.86rem; color: var(--text-muted); font-weight: 600; margin-bottom: 6px; }
+        .kpi-num { font-size: 1.75rem; font-weight: 800; color: var(--dabao-red-dark); margin-bottom: 6px; }
+        .kpi-note { font-size: 0.81rem; color: #877173; line-height: 1.45; }
+
+        /* 导航标签切换栏 */
+        .nav-bar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 26px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background: var(--card-white);
+            border: 1px solid var(--border-rose);
+            color: var(--text-muted);
+            padding: 13px 24px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 0.98rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 12px rgba(122, 9, 18, 0.04);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-btn:hover {
+            background: #FDF2F2;
+            color: var(--dabao-red-main);
+            border-color: #DFB9BD;
+            transform: translateY(-2px);
+        }
+
+        .nav-btn.active {
+            background: linear-gradient(135deg, #8F0B16 0%, #B3121E 100%);
+            color: #FFFFFF;
+            border-color: #8F0B16;
+            box-shadow: 0 8px 20px rgba(179, 18, 30, 0.25);
+        }
+
+        /* 视图面板切换 */
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; animation: fadeUp 0.3s ease; }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 通用网格与卡片 */
+        .grid-12 {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+
+        .col-4 { grid-column: span 4; }
+        .col-12 { grid-column: span 12; }
+
+        .card {
+            background: var(--card-white);
+            border-radius: 22px;
+            padding: 26px 28px;
+            border: 1px solid var(--border-rose);
+            box-shadow: 0 10px 30px rgba(122, 9, 18, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #F3E9E7;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--dabao-red-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-sub {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .pill {
+            font-size: 0.76rem;
+            padding: 4px 12px;
+            border-radius: 999px;
+            background: #FDF0F1;
+            color: var(--dabao-red-main);
+            font-weight: 700;
+            white-space: nowrap;
+            border: 1px solid #F5CFD2;
+        }
+
+        .pill.gold {
+            background: #FDF8EA;
+            color: #9A7B1C;
+            border-color: #EFE0B3;
+        }
+
+        /* 四大核心宣发物料画廊 */
+        .material-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .material-item {
+            background: #FFFDFC;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid #EBDAD7;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .material-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 32px rgba(122, 9, 18, 0.14);
+        }
+
+        .material-img-box {
+            width: 100%;
+            height: 310px;
+            background: #2B080A;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .material-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.4s ease;
+        }
+
+        .material-item:hover .material-img-box img {
+            transform: scale(1.04);
+        }
+
+        .material-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(122, 9, 18, 0.9);
+            color: var(--dabao-gold-soft);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border: 1px solid rgba(243, 229, 171, 0.45);
+            backdrop-filter: blur(4px);
+        }
+
+        .material-body {
+            padding: 16px 18px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .material-body h4 {
+            font-size: 1.02rem;
+            color: var(--dabao-red-dark);
+            margin-bottom: 6px;
+            font-weight: 800;
+        }
+
+        .material-body p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin-bottom: 12px;
+        }
+
+        .material-highlight {
+            background: #FDF3F3;
+            border-left: 3px solid var(--dabao-red-main);
+            padding: 7px 10px;
+            font-size: 0.8rem;
+            color: var(--dabao-red-dark);
+            font-weight: 600;
+            border-radius: 4px;
+        }
+
+        /* 三维咬合策略卡片 */
+        .logic-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .logic-card {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FDF9F8 100%);
+            border: 1px solid #EADCD9;
+            border-radius: 18px;
+            padding: 22px;
+        }
+
+        .logic-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: var(--dabao-red-dark);
+            color: #FFF;
+        }
+        .logic-card.gold .logic-badge { background: #B8860B; }
+        .logic-card.bright .logic-badge { background: var(--dabao-red-main); }
+
+        .logic-card h4 {
+            font-size: 1.1rem;
+            color: var(--dabao-red-dark);
+            margin-bottom: 10px;
+        }
+
+        .logic-card ul {
+            padding-left: 18px;
+            font-size: 0.9rem;
+            line-height: 1.65;
+            color: #3D2B2D;
+        }
+        .logic-card li { margin-bottom: 8px; }
+
+        /* 平台方向卡片 */
+        .direction-card {
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 26px;
+            border: 1px solid var(--border-rose);
+            box-shadow: 0 8px 26px rgba(122, 9, 18, 0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .dir-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 2px solid #F7ECEA;
+            padding-bottom: 12px;
+        }
+
+        .dir-index {
+            background: linear-gradient(135deg, #7A0912, #B3121E);
+            color: var(--dabao-gold-soft);
+            font-weight: 800;
+            font-size: 0.85rem;
+            padding: 5px 12px;
+            border-radius: 8px;
+            white-space: nowrap;
+        }
+
+        .dir-title {
+            font-size: 1.12rem;
+            font-weight: 800;
+            color: var(--dabao-red-dark);
+        }
+
+        .dir-logic {
+            background: #FCF5F5;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: #5C2227;
+        }
+
+        .dir-steps {
+            padding-left: 18px;
+            font-size: 0.9rem;
+            line-height: 1.65;
+            color: #38282A;
+        }
+        .dir-steps li { margin-bottom: 8px; }
+
+        .hashtag-box {
+            margin-top: auto;
+            background: linear-gradient(90deg, #FDF7EC 0%, #FDF2F2 100%);
+            border: 1px solid #ECD8C5;
+            border-radius: 12px;
+            padding: 12px 14px;
+        }
+
+        .hashtag-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #8C5820;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .hashtag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .hashtag {
+            background: #FFFFFF;
+            border: 1px solid #E5BFC3;
+            color: var(--dabao-red-main);
+            font-weight: 700;
+            font-size: 0.84rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        /* 表格样式 */
+        .plan-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+            background: #FFF;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.03);
+        }
+
+        .plan-table th, .plan-table td {
+            padding: 16px 18px;
+            text-align: left;
+            border-bottom: 1px solid #F1E4E2;
+            font-size: 0.91rem;
+            line-height: 1.6;
+            vertical-align: top;
+        }
+
+        .plan-table th {
+            background: linear-gradient(90deg, #7A0912 0%, #9E0E1A 100%);
+            color: var(--dabao-gold-soft);
+            font-weight: 700;
+            font-size: 0.93rem;
+        }
+
+        .plan-table tr:hover { background: #FDF8F7; }
+
+        @media (max-width: 1100px) {
+            .kpi-grid, .material-gallery { grid-template-columns: repeat(2, 1fr); }
+            .logic-grid { grid-template-columns: 1fr; }
+            .col-4, .col-12 { grid-column: span 12; }
+            .hero-banner { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 顶部红金高定主视觉 Banner -->
+    <div class="hero-banner">
+        <div class="hero-left">
+            <div class="hero-eyebrow">41年国民品牌年轻化焕新</div>
+            <h1>大宝 × 丁禹兮首位全球品牌代言人官宣及系列主题店策划</h1>
+            <div class="sub-slogan">Big Idea：《寻宝奇“禹”记，大宝天天见》 A Timeless Treasure, Glow Every Day.</div>
+            <p>整合红宝瓶维A醇抗初老+B5修护水乳霜系列核心货盘、寻宝奇妙夜抖音专场直播、11/6 全新高定周边礼盒及北上成沙四城屈臣氏与万达线下快闪主题店。</p>
+        </div>
+        <div class="hero-endorser-card">
+            <img src="截屏2026-11-12 下午1.50.21.png" alt="丁禹兮全球代言人">
+            <div class="hero-endorser-info">
+                <b>👑 丁禹兮 · 大宝首位全球品牌代言人</b>
+                10/11 20:00「寻宝奇妙夜」空降抖音直播间<br>
+                11/6 10:00 代言人全新专属周边惊喜上线
+            </div>
+        </div>
+    </div>
+
+    <!-- 顶部核心战役指标 KPI -->
+    <div class="kpi-grid">
+        <div class="kpi-box">
+            <div class="kpi-title">品牌历史突破规格</div>
+            <div class="kpi-num">41年首位 <span style="font-size:0.95rem;font-weight:600;">全球代言人</span></div>
+            <div class="kpi-note">打破“传统SOD蜜”单一认知，借势丁禹兮高人气完成品牌心智升维</div>
+        </div>
+        <div class="kpi-box bright">
+            <div class="kpi-title">双主力产品矩阵</div>
+            <div class="kpi-num">红宝瓶 + B5修护</div>
+            <div class="kpi-note">红宝瓶主攻年轻抗初老；B5修护水乳霜套组绑走量周边礼盒促高客单转化</div>
+        </div>
+        <div class="kpi-box gold">
+            <div class="kpi-title">高定周边社交货币</div>
+            <div class="kpi-num">限定周边 <span style="font-size:0.95rem;font-weight:600;">全系开箱</span></div>
+            <div class="kpi-note">红衣大卡小卡、手帐本、贴纸、撕拉吧唧、黑猫IP痛包帆布袋与相机透卡</div>
+        </div>
+        <div class="kpi-box dark">
+            <div class="kpi-title">O2O全域联动触点</div>
+            <div class="kpi-num">4城痛店 </div>
+            <div class="kpi-note">北上成沙屈臣氏主题店+五棵松万达红盒快闪场</div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <div class="nav-btn active" onclick="switchTab('tab-overview', this)">🎯 核心策略与官方宣发物料总览</div>
+        <div class="nav-btn" onclick="switchTab('tab-weibo', this)">🔥 微博传播策略（官宣造势 × 周边晒单 × 痛店打卡）</div>
+        <div class="nav-btn" onclick="switchTab('tab-douyin', this)">🎵 抖音传播策略（进行曲变装 × 寻宝奇妙夜 × 同城POI）</div>
+        <div class="nav-btn" onclick="switchTab('tab-execution', this)">🎁 物料装置创新</div>
+    </div>
+
+<!-- ==================== TAB 1: 核心策略与官方宣发物料总览 ==================== -->
+    <div id="tab-overview" class="tab-panel active">
+        <div class="grid-12">
+
+            <!-- 官方真实宣发物料画廊 -->
+            <div class="card col-12">
+                <div class="card-head">
+                    <div>
+                        <div class="card-title">📸 官方核心宣发物料与视觉拆解</div>
+                        <div class="card-sub">高奢白西装寻宝海报、红衬衫周边礼盒，黑猫IP实拍</div>
+                    </div>
+                </div>
+
+                <!-- 调整为 3 列 Grid 布局，使其横向等宽排布更美观 -->
+                <div class="material-gallery" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+                    
+                    <!-- 物料 1 -->
+                    <div class="material-item">
+                        <div class="material-img-box">
+                            <span class="material-tag">🔥 10/11 20:00 抖音直播间</span>
+                            <img src="dabao1.png" alt="寻宝奇妙夜海报">
+                        </div>
+                        <div class="material-body">
+                            <div>
+                                <h4>①「寻宝奇妙夜」空降主视觉</h4>
+                                <p>丁禹兮身着矜贵白西装搭配红金胸针，手持大宝核心修护抗老套组。左下角强预告“抽限量亲签、赠专属周边”，为抖音官方直播间蓄水引流。</p>
+                            </div>
+                            <div class="material-highlight"> 传播转化点：白西装贵公子视觉反差 + 限量亲签、红绳挂件悬念引流</div>
+                        </div>
+                    </div>
+
+                    <!-- 物料 2 -->
+                    <div class="material-item">
+                        <div class="material-img-box">
+                            <span class="material-tag">🎁 11/6 10:00 周边上线</span>
+                            <img src="dabao2.png" alt="代言人全新专属周边">
+                        </div>
+                        <div class="material-body">
+                            <div>
+                                <h4>② 代言人全新专属周边机制图</h4>
+                                <p>购大宝B5修护礼盒（含B5舒缓精华水150ml*2、修护乳95ml、特护霜245g及便携装），全套赠红衬衫造型大卡、九宫格手帐本、贴纸、撕拉吧唧及小卡*3。</p>
+                            </div>
+                            <div class="material-highlight"> 传播转化点：“撕拉吧唧”盲盒揭秘感 + 实用B5修护套装高客单锁客</div>
+                        </div>
+                    </div>
+
+                    <!-- 物料 3 (原物料 4) -->
+                    <div class="material-item">
+                        <div class="material-img-box">
+                            <span class="material-tag">🐾 粉丝高颜值开箱实拍</span>
+                            <img src="dabao3.png" alt="礼盒与黑猫周边实拍">
+                        </div>
+                        <div class="material-body">
+                            <div>
+                                <h4>③ 红银礼盒 × 黑猫IP痛包开箱</h4>
+                                <p>极具质感的银色内胆红礼盒，搭配丁禹兮个人符号浓厚的“戴帽唱歌黑猫。痛包帆布袋、猫爪卡套、红色相机透卡及三张小卡。</p>
+                            </div>
+                            <div class="material-highlight"> 传播转化点：相机透卡线下借位打卡 + 黑猫痛包成为饭圈社交货币</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- 项目背景与三维咬合逻辑 -->
+            <div class="card col-12">
+                <div class="card-head">
+                    <div>
+                        <div class="card-title"> 项目背景与传播逻辑</div>
+                        <div class="card-sub">将品牌41年国民资产、丁禹兮多面剧抛特质与线上线下高定物料深度咬合</div>
+                    </div>
+                    <span class="pill">核心策略拆解</span>
+                </div>
+                <div class="logic-grid">
+                    <div class="logic-card">
+                        <span class="logic-badge">01 品牌破局痛点</span>
+                        <h4>国民老字号年轻化升维</h4>
+                        <ul>
+                            <li><b>情怀资产：</b>“大宝天天见”、“要想皮肤好，早晚用大宝”具备殿堂级国民认知与信任感。</li>
+                            <li><b>升级诉求：</b>打破“爸妈辈平价SOD蜜”刻板印象，借<b>大宝红宝瓶（抗皱紧致）</b>与<b>B5修护系列</b>切入年轻功效护肤赛道。</li>
+                        </ul>
+                    </div>
+                    <div class="logic-card bright">
+                        <span class="logic-badge">02 艺人契合赋能</span>
+                        <h4>剧抛脸表现力 × 高频陪伴</h4>
+                        <ul>
+                            <li><b>多面气质：</b>白西装的矜贵轻熟感与红衬衫的摩登少年感，完美契合大宝从经典走向摩登的焕新蜕变。</li>
+                            <li><b>天然文字梗：</b>“大宝”“禹”上“小丁”构成<b>#寻宝奇“禹”记# #大宝遇上小丁#</b>。</li>
+                        </ul>
+                    </div>
+                    <div class="logic-card gold">
+                        <span class="logic-badge">03 O2O流量闭环</span>
+                        <h4>高定周边 × 四城主题痛店</h4>
+                        <ul>
+                            <li><b>周边钩子：</b>撕拉吧唧、相机透卡、黑猫帆布袋精准踩中年轻饭圈“谷子文化”审美。</li>
+                            <li><b>空间体验：</b>北上成沙四城屈臣氏主题店+五棵松万达巨型红盒快闪店，打通线上种草与线下核销。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ==================== TAB 2: 微博平台传播策略 ==================== -->
+    <div id="tab-weibo" class="tab-panel">
+        <div class="grid-12">
+
+            <div class="card col-12" style="background: linear-gradient(125deg, #6E0710 0%, #A3101C 100%); color: #FFF;">
+                <div>
+                    <span class="pill gold" style="margin-bottom:8px; display:inline-block;">微博平台核心定位</span>
+                    <h3 style="font-size:1.45rem; color:#FFF; margin-bottom:6px;">【舆论引爆场 × 41年首位排面造势 × 谷子开箱与痛店打卡】</h3>
+                </div>
+            </div>
+
+            <div class="direction-card col-4">
+                <div class="dir-header">
+                    <span class="dir-index">微博方向 1</span>
+                    <div class="dir-title">【排面与双赢向】41年首位全球代言，国民品牌与青年演员的双向奔赴</div>
+                </div>
+                <div class="dir-logic">
+                    <b>💡 传播逻辑：</b>深挖“大宝创立41年来首次设立全球品牌代言人”的唯一性与含金量。将丁禹兮的海内外影响力与大宝品牌焕新野心绑定，通过娱乐大V与行业矩阵渲染，激发粉丝控评与晒单热情。
+                </div>
+                <ul class="dir-steps">
+                    <li><b>悬念预热海报：</b>官宣前一日释出红黑光影悬念图，预告“41年经典焕新，明天与首位全球品牌代言人正式相见”。</li>
+                    <li><b>红白双生官宣大片：</b>同步释出【白西装】与【红衬衫】双海报，展现丁禹兮极强的镜头塑造力，刷新大众对国货大片的审美认知。</li>
+                    <li><b>大小宝双关：</b>围绕“国民大宝 × 内娱兮宝（小丁/大禹）”发起双关造句。粉丝之间会转发上口的广告词助推数据。</li>
+                </ul>
+                <div class="hashtag-box">
+                    <span class="hashtag-label">🔥 匹配微博话题词：</span>
+                    <div class="hashtag-list">
+                        <span class="hashtag">#丁禹兮大宝全球品牌代言人#</span>
+                        <span class="hashtag">#大宝41年首位全球代言人丁禹兮#</span>
+                        <span class="hashtag">#当国民大宝遇上小丁#</span>
+                        <span class="hashtag">#没想到你是这样的大宝#</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="direction-card col-4">
+                <div class="dir-header">
+                    <span class="dir-index">微博方向 2</span>
+                    <div class="dir-title">【视觉反差与开箱种草】从SOD蜜到红宝瓶&B5礼盒，高定“谷子”晒单</div>
+                </div>
+                <div class="dir-logic">
+                    <b>💡 传播逻辑：</b>结合 11/6 惊喜上线的「代言人全新专属周边（红衣大卡/手帐本/撕拉吧唧/黑猫痛包）」，用年轻化饭圈的周边配置打破刻板印象，联动美妆博主拆解红宝瓶抗初老与B5修护水乳霜稳屏障的功效。
+                </div>
+                <ul class="dir-steps">
+                    <li><b>“撕拉吧唧”开箱大赏：</b>引导收到大宝B5修护礼盒的粉丝在微博发布“沉浸式撕开丁禹兮吧唧”的九宫格返图，利用盲盒揭秘感撬动二次转化。</li>
+                    <li><b>跨代际同框晒单：</b>发起「大宝已经进化成这样了吗」晒图活动，左边晒长辈桌上的经典SOD蜜，右边晒自己抢到的红宝瓶、B5套组与黑猫卡套。</li>
+                </ul>
+                <div class="hashtag-box">
+                    <span class="hashtag-label">🔥 匹配微博话题词：</span>
+                    <div class="hashtag-list">
+                        <span class="hashtag">#现在的大宝已经进化成这样了吗#</span>
+                        <span class="hashtag">#丁禹兮大宝红衣撕拉吧唧#</span>
+                        <span class="hashtag">#丁禹兮的大宝红宝瓶#</span>
+                        <span class="hashtag">#大宝B5修护专属周边开箱#</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="direction-card col-4">
+                <div class="dir-header">
+                    <span class="dir-index">微博方向 3</span>
+                    <div class="dir-title">【O2O痛店打卡向】四城痛店空降，“红色相机透卡”同框打卡</div>
+                </div>
+                <div class="dir-logic">
+                    <b>💡 传播逻辑：</b>将北上成沙四城屈臣氏主题店及五棵松万达巨型“红色能量礼盒”快闪店包装为品牌送给粉丝痛店。利用礼盒内的“红色相机造型透卡”与门店等身立牌，跑通“线上官宣 ➔ 线下门店 ➔ 微博晒图”闭环。
+                </div>
+                <ul class="dir-steps">
+                    <li><b>相机透卡错位摄影：</b>官方示范用周边里的“丁禹兮红色相机透卡”对准五棵松万达巨型红盒或屈臣氏痛墙拍照，定格“与小丁同游城市”的画面。</li>
+                    <li><b>背上黑猫帆布袋去打卡：</b>引导粉丝背着同款黑猫帆布袋前往四城门店偶遇打卡，认证“海棠专属暗号”，饭圈数据助推。</li>
+                </ul>
+                <div class="hashtag-box">
+                    <span class="hashtag-label">🔥 匹配微博话题词矩阵：</span>
+                    <div class="hashtag-list">
+                        <span class="hashtag">#大宝把丁禹兮痛店开到了家门口#</span>
+                        <span class="hashtag">#偶遇丁禹兮大宝主题店#</span>
+                        <span class="hashtag">#今天和丁禹兮大宝同框了吗#</span>
+                        <span class="hashtag">#丁禹兮痛店#</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ==================== TAB 3: 抖音平台传播策略 ==================== -->
+    <div id="tab-douyin" class="tab-panel">
+        <div class="grid-12">
+
+            <div class="card col-12" style="background: linear-gradient(125deg, #2B080A 0%, #7A0912 60%, #B3121E 100%); color: #FFF;">
+                <div>
+                    <span class="pill gold" style="margin-bottom:8px; display:inline-block;">抖音平台核心定位</span>
+                    <h3 style="font-size:1.45rem; color:#FFF; margin-bottom:6px;">《丁禹兮进行曲》变装挑战 × 「寻宝奇妙夜」直播名场面 × 同城POI探店】</h3>
+                    <p style="color:#F5D6D8; font-size:0.95rem;">拒绝生硬tvc，以《丁禹兮进行曲》掀起颜值变装风暴，提取丁禹兮温暖原声台词作为背景音发起「七天早晚宝护打卡」，并挂载四城门店POI拉动同城核销。</p>
+                </div>
+            </div>
+
+            <div class="direction-card col-4">
+                <div class="dir-header">
+                    <span class="dir-index">抖音方向 1</span>
+                    <div class="dir-title">【BGM变装挑战赛】《丁禹兮进行曲》引爆“红宝瓶”跨时代卡点变装</div>
+                </div>
+                <div class="dir-logic">
+                    <b>💡 传播逻辑：</b>结合抖音高热“明星进行曲”文化，将经典旋律“大宝天天见”与鼓点融合，定制专属BGM《丁禹兮进行曲》，用“日常乖巧 vs 红黑高奢”的强视觉转场引发UGC。并且粉圈数据驱动，粉丝会对《丁禹兮进行曲》相关内容进行主动加热和产出，自带流量。
+                </div>
+                <ul class="dir-steps">
+                    <li><b>艺人打样首发Cha：</b>前半段丁禹兮穿日常衬衫温和微笑，手指蘸取面霜轻抹镜头遮挡转场；伴随鼓点，后半段切换为白西装/红衬衫造型、搭配具有感染力的眼神杀。</li>
+                    <li><b>美妆、变装达人跟拍”：</b>bgm丁禹兮进行曲，博主素颜出镜，用大宝红宝瓶或B5特护霜在脸颊一抹，卡点变装为精致妆容装扮。</li>
+                    <li><b>定制AR光影贴纸：</b>上线抖音「红宝瓶能量光影」贴纸，路人做抹脸手势即可触发红金流光边框与冷白皮滤镜，降低跟拍门槛。</li>
+                </ul>
+                <div class="hashtag-box">
+                    <span class="hashtag-label">🎵 匹配抖音话题词矩阵：</span>
+                    <div class="hashtag-list">
+                        <span class="hashtag">#丁禹兮进行曲#</span>
+                        <span class="hashtag">#大宝红宝瓶变装挑战#</span>
+                        <span class="hashtag">#丁禹兮大宝红宝瓶转场#</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="direction-card col-4">
+                <div class="dir-header">
+                    <span class="dir-index">抖音方向 2</span>
+                    <div class="dir-title">【7天早晚宝护打卡 & 情绪护肤向】内娱全肯定代言人 × 换季熬夜烂脸兜底</div>
+                </div>
+                <div class="dir-logic">
+                    <b>💡 传播逻辑：</b>锚定抖音年轻用户“白天高压打工、晚上报复性熬夜追剧”的生活痛点，提出“兮宝修护你的精神内耗，大宝修护你的熬夜垮脸”概念。通过仪式感“7天早晚宝护打卡”，将明星陪伴的情绪价值转化为大宝B5修护礼盒与九宫格手帐周边的种草。
+                </div>
+                <ul class="dir-steps">
+                    <li><b>“7天早晚宝护”全肯定式护肤打卡赛：</b>，提取丁禹兮温暖治愈的原声语音，如“今天也辛苦了，早晚都要好好照顾自己，我们明天见”作为官方打卡原生音频。号召粉丝与护肤党使用礼盒内的“九宫格手帐本贴纸”与“大宝B5水乳特护霜”，连续7天记录早晚护肤的过程（Day1泛红急救 ➔ Day3水润维稳 ➔ Day7冷白水光肌），在收获情绪价值的同时验证B5修护力。</li>
+                    <li><b>第一视角“早晚宝护”合拍：</b>发布竖屏互动视频，丁禹兮凑近镜头叮嘱“早晚都要见”，引导粉丝开启抖音合拍同框互动。</li>
+                </ul>
+                <div class="hashtag-box">
+                    <span class="hashtag-label">🎵 匹配抖音话题词矩阵：</span>
+                    <div class="hashtag-list">
+                        <span class="hashtag">#丁禹兮7天早晚宝护打卡#</span>
+                        <span class="hashtag">#兮宝治内耗大宝治烂脸#</span>
+                        <span class="hashtag">#把脆弱肌宠成掌中宝</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="direction-card col-4">
+                <div class="dir-header">
+                    <span class="dir-index">抖音方向 3</span>
+                    <div class="dir-title">【同城POI探店与奇观种草向】用《丁禹兮进行曲》拆开线下巨型红色礼盒</div>
+                </div>
+                <div class="dir-logic">
+                    <b>💡 传播逻辑：</b>打通线上音频热度与线下主题店实体空间。联动北上成沙四城本地生活达人、探店博主及粉丝，挂载屈臣氏门店及五棵松万达POI定位拍摄探店Vlog，直接拉动线下客流与周边核销。
+                </div>
+                <ul class="dir-steps">
+                    <li><b>推门穿越转场脚本：</b>博主在五棵松万达巨型红色礼盒外做推门动作，伴随《丁禹兮进行曲》鼓点推门进入满是丁禹兮立牌的痛店空间，展示内部高出片机位。</li>
+                    <li><b>0元打卡/满赠薅周边攻略：</b>在视频中详细演示如何在门店通过互动任务赢取限定透卡、撕拉吧唧与黑猫帆布袋，左下角挂载同城门店团购链接促成即时转化。</li>
+                </ul>
+                <div class="hashtag-box">
+                    <span class="hashtag-label">🎵 匹配抖音话题词矩阵：</span>
+                    <div class="hashtag-list">
+                        <span class="hashtag">#用丁禹兮进行曲打开大宝主题店#</span>
+                        <span class="hashtag">#沉浸式拆开丁禹兮的红色礼盒#</span>
+                        <span class="hashtag">#丁禹兮大宝快闪店出片指南#</span>
+                        <span class="hashtag">#去屈臣氏赴一场丁禹兮的约#</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ==================== TAB 4: 物料装置创新与执行节奏表 ==================== -->
+    <div id="tab-execution" class="tab-panel">
+        <div class="grid-12">
+
+            <div class="card col-12">
+                <div class="card-head">
+                    <div>
+                        <div class="card-title">🎁 核心传播物料升级与线下互动装置落地建议</div>
+                        <div class="card-sub">围绕现有“手帐本、撕拉吧唧、相机透卡、黑猫IP痛包”实物资产，升级线上线下互动玩法</div>
+                    </div>
+                    <span class="pill gold">O2O执行落地矩阵</span>
+                </div>
+
+                <table class="plan-table">
+                    <thead>
+                        <tr>
+                            <th style="width:15%;">落地维度</th>
+                            <th style="width:23%;">核心物料 / 装置名称</th>
+                            <th style="width:38%;">具体设计细节与宣发物料结合点</th>
+                            <th style="width:24%;">核心传播与转化价值</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>线上数字物料</b></td>
+                            <td>
+                                1. 定制音源《丁禹兮进行曲》<br>
+                                2. 「红宝瓶能量光影」AR贴纸<br>
+                                3. 提取丁禹兮温暖治愈的原声语音
+                            </td>
+                            <td>
+                                • <b>音源：</b>前3秒融入经典“大宝天天见”旋律+拧瓶盖ASMR音效，后段切入高燃鼓点。<br>
+                                • <b>贴纸：</b>识别手部涂抹动作自动触发红金光效与冷白皮滤镜。<br>
+                                • <b>语音切片：</b>提取丁禹兮温暖治愈的原声语音作为抖音热梗音频。
+                            </td>
+                            <td>降低泛娱乐路人参与变装的门槛。粉丝做数据助推破圈</td>
+                        </tr>
+                        <tr>
+                            <td><b>线下主题痛店装置</b><br>（四城屈臣氏+万达）</td>
+                            <td>
+                                1. 「41年时光走廊」新旧碰撞墙<br>
+                                2. 「早晚天天见」双面借位立牌<br>
+                                3. 「拿起大宝听见小丁」感应耳机
+                            </td>
+                            <td>
+                                • <b>时光走廊：</b>左侧为1985复古画报风，右侧为2026红黑科技感“红宝瓶能量舱”。<br>
+                                • <b>双面立牌：</b>一面为10/11海报款“白西装矜贵风”，一面为11/6周边款“红衬衫摩登风”。<br>
+                                • <b>语音装置：</b>门店货架试用装底座连接感应耳机，拿起红宝瓶或B5特护霜即播放丁禹兮早晚叮嘱。
+                            </td>
+                            <td>极具惊喜感的私密语音体验与双面立牌，促使进店粉丝100%举起手机录制短视频发往抖音与微博。</td>
+                        </tr>
+                        <tr>
+                            <td><b>高定周边礼盒</b></td>
+                            <td>
+                                1. 「撕拉吧唧」盲盒式惊喜徽章<br>
+                                2. 「红色相机透卡」打卡取景器<br>
+                                3. 「黑猫IP痛包」& 九宫格手帐本
+                            </td>
+                            <td>
+                                • <b>撕拉吧唧：</b>将徽章表面设计为可撕拉包装，撕开瞬间露出丁禹兮眼神杀特写。<br>
+                                • <b>相机透卡：</b>半透明红色相机取景框造型，方便粉丝对准快闪店或城市地标借位合拍。<br>
+                                • <b>黑猫帆布袋与手帐本：</b>融入丁禹兮个人色彩浓厚的戴帽黑猫IP与红衣小卡、贴纸、红绳挂件。
+                            </td>
+                            <td>切中年轻消费群体“谷子收藏”与“痛包出街”心理，驱动大宝B5修护套组与红宝瓶礼盒核销。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function switchTab(tabId, btn) {
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        btn.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
